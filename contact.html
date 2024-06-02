@@ -1,0 +1,139 @@
+<!-- By HuggeTheDev and RedRaptor -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NukaMc - Official</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<meta name="description" content="NukaMc is the best minecraft and fallout server! You can join with the IP 'play.craftout.tk'.">
+	<meta name="keywords" content="NukaMc, play.nukamc.tk, Minecraft Server, Minecraft, Fun, Play, Portal, Website, Official">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="forum.html">
+	<script src="https://use.fontawesome.com/30155533f0.js"></script>
+	<script type="text/javascript">
+		function mobile() {
+			var bars = document.getElementById("mnav");
+			if(bars.className === "mnav") {
+				bars.className += " responsive";
+			} else {
+				bars.className = "mnav";
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div class="nav">
+			<ul class="nav-items" id="nav-items">
+				<a><li onclick="mobile()" class="icon fa fa-bars fa-2x"></li></a>
+				<a href="index.html"><li class="h">
+					<div class="overlay"></div>
+					Home
+				</li></a>
+				<a href="vote.html"><li class="h">
+					<div class="overlay"></div>
+					Vote
+				</li></a>
+				<a href="socials.html"><li class="h">
+					<div class="overlay"></div>
+					Social's
+				</li></a>
+				<div class="log"><img alt="NukaMc" class="logo" src="img/NukaMc.png" ></div>
+				<a href="index.html#games"><li class="h">
+					<div class="overlay"></div>
+					Games
+				</li></a>
+				<a href="contact.html"><li class="h">
+					<div class="overlay"></div>
+					Contact Us
+				</li></a>
+				<a href="#"><li class="h">
+					<div class="overlay"></div>
+					Forums
+				</li></a>
+			</ul>
+			<div class="mnav" id="mnav">
+				<a href="index.html"><li class="i">
+					Home
+				</li></a>
+				<a href="vote.html"><li class="i">
+					Vote
+				</li></a>
+				<a href="index.html#games"><li class="i">
+					Games
+				</li></a>
+				<a href="contact.html"><li class="i">
+					Contact Us
+				</li></a>
+				<a href="socials.html"><li class="i">
+					Socials
+				</li></a>
+				<a href="#"><li class="i">
+					Forums
+				</li></a>
+			</div>
+		</div>
+
+		<body>
+		<div class="hero" id="main">
+			
+			<div id="contact">
+                <h2>COMMUNITY CONTACTS</h2>
+                <p>Discord - <a href="https://discord.gg/nukamc">discord.gg/nukamc</a></p>
+                <form id="contactform" onsubmit="sendEmail(); reset(); return false">
+                    <h2>CONTACT US</h2>
+                    <input type="text" id="email" placeholder="Your Email" required>
+                    <textarea id="message" rows="4" placeholder="What do you need help with?"></textarea>
+                    
+                    <button type="submit">Send</button>
+                        
+                    
+
+                    
+                </form>
+                  
+            </div>
+            <script src="https://www.google.com/recaptcha/api.js"></script>
+            <script>
+                function onSubmit(token) {
+                  document.getElementById("contactform").submit();
+                }
+              </script>
+
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+
+                function sendEmail(){
+
+                    Email.send({
+                        Host : "smtp.elasticemail.com",
+                        Username : "CHANGE TO THE EMAIL OF THE ELASTICMAIL ACCOUNT",
+                        Password : "PASSWORD OF THE ELASTICEMAIL",
+                        To : 'CHANGE TO THE EMAIL THAT SHOULD GET THE SUBMISSIONS',
+                        From : document.getElementById("email").value,
+                        Subject : "Contact form",
+                        Body : "Email: " + document.getElementById("email").value + "<br> Message: " + document.getElementById("message").value
+                    }).then(
+                        message => alert("Message sent successfully, we will be in contact with you as soon as possible!")
+                    );
+
+                }
+
+            </script>
+            
+		</div>
+	</header>
+	<footer>
+		<img alt="NukaMc" src="img/NukaMc.png">
+		<p>Copyright &copy; NukaMc 2021</p>
+	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

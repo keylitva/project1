@@ -1,0 +1,215 @@
+<!-- By RedRaptor -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NukaMc - Official</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<meta name="description" content="NukaMc is the best minecraft and fallout server! You can join with the IP 'play.craftout.tk'.">
+	<meta name="keywords" content="NukaMc, play.nukamc.tk, Minecraft Server, Minecraft, Fun, Play, Portal, Website, Official">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="forum.html">
+	<script src="https://use.fontawesome.com/30155533f0.js"></script>
+	<script type="text/javascript">
+		function mobile() {
+			var bars = document.getElementById("mnav");
+			if(bars.className === "mnav") {
+				bars.className += " responsive";
+			} else {
+				bars.className = "mnav";
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div class="nav">
+			<ul class="nav-items" id="nav-items">
+				<a><li onclick="mobile()" class="icon fa fa-bars fa-2x"></li></a>
+				<a href="index.html"><li class="h">
+					<div class="overlay"></div>
+					Home
+				</li></a>
+				<a href="vote.html"><li class="h">
+					<div class="overlay"></div>
+					Vote
+				</li></a>
+				<a href="socials.html"><li class="h">
+					<div class="overlay"></div>
+					Socials
+				</li></a>
+				<div class="log"><img alt="NukaMc" class="logo" src="img/NukaMc.png" ></div>
+				<a href="index.html#games"><li class="h">
+					<div class="overlay"></div>
+					Games
+				</li></a>
+				<a href="contact.html"><li class="h">
+					<div class="overlay"></div>
+					Contact Us
+				</li></a>
+				<a href="#"><li class="h">
+					<div class="overlay"></div>
+					Forums
+				</li></a>
+			</ul>
+			<div class="mnav" id="mnav">
+				<a href="index.html"><li class="i">
+					Home
+				</li></a>
+				<a href="vote.html"><li class="i">
+					Vote
+				</li></a>
+				<a href="index.html#games"><li class="i">
+					Games
+				</li></a>
+				<a href="contact.html"><li class="i">
+					Contact Us
+				</li></a>
+				<a href="socials.html"><li class="i">
+					Socials
+				</li></a>
+				<a href="#"><li class="i">
+					Forums
+				</li></a>
+			</div>
+		</div>
+
+		
+		
+
+		<div class="hero" id="main">
+			<h1>Welcome to NukaMc</h1>
+			
+			<script>fetch('https://api.mcsrvstat.us/2/65.21.130.50:30049')
+				.then(response => response.json())
+				.then(data => {
+				  console.log(data.players.online);
+				  
+				  setTimeout(function() {
+    				document.getElementById('online-players').textContent = data.players.online;
+				}, 1000);
+				  
+				});
+				
+			</script>
+			
+			<p class="info">Join <span class="sip" data-ip="play.nukamc.com" data-port="25601" id="online-players"></span> other players on <span class="ip">play.nukamc.tk</span></p>
+		</div>
+
+		
+
+		
+
+		
+	</header>
+	<div class="main">
+		<div id="description">
+			<div>
+				<i class="fa fa-rocket fa-4x"></i>
+				<span>
+					<h3>OUR HISTORY</h3>
+					<p>NukaMc has been created for over 1 year ago. What started off as a small community minecraft server has developed into a big community we are really proud.</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-user fa-4x"></i>
+				<span>
+					<h3>OUR STAFF</h3>
+					<p>The Nuka's staff team is really friendly, here to help you. Have any questions? Make sure to do /staff ingame to reach out!</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-server fa-4x"></i>
+				<span>
+					<h3>OUR SERVERS</h3>
+					<p>We have <b>Factions</b> and <b>Mini-games</b> on our server, everything is custom to join the Fallout style. Join today at play.nukamc.tk!</p>
+				</span>
+			</div>
+		</div>
+		<div id="games">
+			<h2>OUR GAMES</h2>
+			<div class="game e">
+				<div>
+					<h3>MINI-GAMES</h3>
+					<p>Our mini-game are parkour, build battle, kit pvp and the pit!</p>
+				</div>
+				<img alt="MyServer SkyBlock Server" class="gimg a" src="img/skyblock.png">
+			</div>
+
+			<hr>
+
+			<div class="game f">
+				<div>
+					<h3>FACTIONS</h3>
+					<p>Factions is a popular team-based, pvp orientated gamemode where you claim land, build a base with your friends, and raid other factions. We have several awesome features such as custom enchantments and a handy shops. Compete with other factions and strive to become the top faction, winning a free store coupon, today! You can create your own factions fallout related.</p>
+				</div>
+				<img alt="MyServer Factions Server" class="gimg b" src="img/factionss.png">
+			</div>
+
+		
+			<hr>
+		</div>
+		<div id="staff">
+			<div class="staff">
+				<h2>OUR TEAM</h2>
+				<div class="staff-team">
+					<div>
+						<h3>RedRaptor</h3>
+						<div class="owner">Owner</div>
+						<img alt="MyServer Staff Member" src="img/RedRaptor.png">
+					</div>
+
+					<div>
+						<h3>Valkauri0x</h3>
+						<div class="manager">Supervisor</div>
+						<img alt="MyServer Staff Member" src="img/Valkauri0x.png">
+					</div>
+
+					<div>
+						<h3>Kinon07</h3>
+						<div class="manager">Supervisor</div>
+						<img alt="MyServer Staff Member" src="img/Steeve.png">
+					</div>
+
+					<div>
+						<h3>Tawess123</h3>
+						<div class="manager">Supervisor</div>
+						<img alt="MyServer Staff Member" src="img/TAwess.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="announcement">
+			<div class="an-img">
+				<h2>NEWS & ANNOUNCEMENTS</h2>
+				<p class="an-t">
+					<b>We just released the Launcher Beta!</b>
+					<br><br>
+					And it went extremely well. We couldn't be more proud to run NukaMc.
+					<br><br>
+					New maps, new staff members, new plugins, the server has been reinvented.
+					<br><br>
+					<a href="twitter.com/" class="btn">Read More</a>
+				</p>
+			</div>
+		</div>
+		<div id="contact">
+			<h2>CONTACT US</h2>
+			<p>Email - <a href="mailto:nukamc.official@gmail.com">nukamc.official@gmail.com</a></p>
+			<p>Discord - <a href="https://discord.gg/nukamc">discord.gg/nukamc</a></p>
+		</div>
+	</div>
+	<footer>
+		<img alt="NukaMc" src="img/NukaMc.png">
+		<p>Copyright &copy;NukaMc 2021</p>
+	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
